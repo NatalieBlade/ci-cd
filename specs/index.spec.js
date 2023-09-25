@@ -7,7 +7,7 @@ describe('user', () => {
           .post('/api/v1/login')
           .send({})
 
-      expect(res.status).not.toEqual(404);
+      expect(res.status).not.toEqual(400);
     })
 
     test('Авторизация должна проходить успешно с правильным логином и паролем', async () => {
